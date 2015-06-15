@@ -11,7 +11,7 @@ is a very difficult task. Xtext brought some hope, but it suffers the same fate 
 are ambiguous or with complex rules are hard to do with grammar generators that use static analysis to determine
 correctness, because it's a huge effort to make them correct, and in the end it doesn't really matter that much.
 
-THen along came Antlr 4. And promised to make the grammar writer's life so much better. It defaults to doing the
+Then along came Antlr 4. And promised to make the grammar writer's life so much better. It defaults to doing the
 right thing with tough grammars. It gives me real hope. And the collection of grammars that Terence Parr has
 collected using Antlr 4 show that the toughest langauges are indeed possible.
 
