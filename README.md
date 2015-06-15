@@ -21,6 +21,6 @@ with syntax and semantic highlighting, you need content assist, you need indexin
 The purpose of this project is to see if we can provide common implementations of these components that
 leverage the fact you're using Antlr 4 for the lexer and parser. Write your grammer, hook up the parts that
 are interesting, boom you have an IDE. We've gained a lot of experience building the CDT and JDT. Can we
-help new languages and pass those lessons on to the community and make Eclipse the IDE for everything.
+help new languages and pass those lessons on to the community and make Eclipse the IDE for everything?
 
 Let's see if we can make this dream come true.
