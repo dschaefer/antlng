@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Ui
-Bundle-SymbolicName: doug.antlng.ui;singleton:=true
+Bundle-SymbolicName: doug.antlng.hello.ui;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: doug.antlng.ui.Activator
+Bundle-Activator: doug.antlng.hello.ui.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.jface.text,

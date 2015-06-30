@@ -5,12 +5,12 @@
    <extension
          point="org.eclipse.ui.editors">
       <editor
-            name="Lang Test Editor"
-            extensions="langtest"
+            name="Sample XML Editor"
+            extensions="xml"
             icon="icons/sample.gif"
             contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
-            class="doug.antlng.ui.editors.TestEditor"
-            id="doug.lang.editors.TestEditor">
+            class="doug.antlng.hello.ui.editors.xml.XMLEditor"
+            id="doug.antlng.hello.ui.editors.xml.XMLEditor">
       </editor>
    </extension>
 

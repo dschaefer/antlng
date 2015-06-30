@@ -1,4 +1,4 @@
-package doug.lang.ui.editors;
+package doug.antlng.ui.editors;
 
 import org.eclipse.jface.text.IDocument;
 import org.eclipse.ui.editors.text.TextFileDocumentProvider;

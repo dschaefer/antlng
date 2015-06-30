@@ -1,4 +1,4 @@
-package doug.lang.ui.editors;
+package doug.antlng.ui.editors;
 
 import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.jface.text.source.DefaultCharacterPairMatcher;

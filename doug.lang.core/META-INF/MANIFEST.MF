@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Com
-Bundle-SymbolicName: doug.lang.core
+Bundle-SymbolicName: doug.antlng.core
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: doug.lang.core.Activator
+Bundle-Activator: doug.antlng.core.Activator
 Require-Bundle: org.eclipse.core.runtime
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
