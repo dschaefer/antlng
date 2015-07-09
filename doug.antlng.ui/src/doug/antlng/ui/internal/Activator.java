@@ -1,4 +1,4 @@
-package doug.antlng.ui;
+package doug.antlng.ui.internal;
 
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.plugin.AbstractUIPlugin;

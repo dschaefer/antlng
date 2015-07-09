@@ -3,10 +3,11 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Ui
 Bundle-SymbolicName: doug.antlng.ui;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: doug.antlng.ui.Activator
+Bundle-Activator: doug.antlng.ui.internal.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.jface.text,
- org.eclipse.ui.editors
+ org.eclipse.ui.editors,
+ doug.antlng.core;bundle-version="1.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy

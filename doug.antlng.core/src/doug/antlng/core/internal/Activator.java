@@ -1,4 +1,4 @@
-package doug.antlng.core;
+package doug.antlng.core.internal;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;

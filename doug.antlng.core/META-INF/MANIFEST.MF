@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Com
 Bundle-SymbolicName: doug.antlng.core
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: doug.antlng.core.Activator
+Bundle-Activator: doug.antlng.core.internal.Activator
 Require-Bundle: org.eclipse.core.runtime
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
