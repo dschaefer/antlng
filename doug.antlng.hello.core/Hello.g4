@@ -4,10 +4,17 @@ grammar Hello;
 package doug.antlng.hello.core;
 }
 
-r : 'hello' ID ';' ;
+@lexer::members {
+public static final int WHITESPACE = 1;
+public static final int COMMENTS = 2;
+}
+
+r : HELLO ID ';' ;
+
+HELLO : 'hello' ;
 
 ID : [a-z]+ ;
 
-WS : [ \t\r\n]+ -> skip ;
+WS : [ \t\r\n]+ -> channel(WHITESPACE) ;
 
-COMMENT : '//' .*? '\n' -> skip ;
+COMMENT : '//' .*? '\n' -> channel(COMMENTS) ;

@@ -12,6 +12,15 @@
             class="doug.antlng.hello.ui.editors.xml.XMLEditor"
             id="doug.antlng.hello.ui.editors.xml.XMLEditor">
       </editor>
+      <editor
+            class="doug.antlng.hello.ui.editors.hello.HelloEditor"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            default="false"
+            extensions="hello"
+            icon="icons/sample.gif"
+            id="doug.antlng.hello.ui.editor"
+            name="Hello Editor">
+      </editor>
    </extension>
 
 </plugin>

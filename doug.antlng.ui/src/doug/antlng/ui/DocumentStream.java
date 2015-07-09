@@ -8,17 +8,20 @@ import org.eclipse.jface.text.IDocument;
 public class DocumentStream implements CharStream {
 
 	private final IDocument document;
-	private final String name;
-	private int p = 0;
+	private int p;
+	private int n;
+	private int size;
 
-	public DocumentStream(IDocument document, String name) {
+	public DocumentStream(IDocument document, int offset, int length) {
 		this.document = document;
-		this.name = name;
+		this.p = offset;
+		this.n = offset + length;
+		this.size = length;
 	}
 
 	@Override
 	public void consume() {
-		if (p >= document.getLength()) {
+		if (p >= n) {
 			assert LA(1) == EOF;
 			throw new IllegalStateException("cannot consume EOF"); //$NON-NLS-1$
 		}
@@ -39,7 +42,7 @@ public class DocumentStream implements CharStream {
 			}
 		}
 
-		if (p + i - 1 >= document.getLength()) {
+		if (p + i - 1 >= n) {
 			return EOF;
 		}
 
@@ -58,18 +61,26 @@ public class DocumentStream implements CharStream {
 
 	@Override
 	public void seek(int index) {
-		// TODO Auto-generated method stub
+		if (index <= p) {
+			p = index; // just jump; don't update stream state (line, ...)
+			return;
+		}
 
+		// seek forward, consume until p hits index or n (whichever comes first)
+		index = Math.min(index, n);
+		while (p < index) {
+			consume();
+		}
 	}
 
 	@Override
 	public int size() {
-		return document.getLength();
+		return size;
 	}
 
 	@Override
 	public String getSourceName() {
-		return name;
+		return "<source>"; //$NON-NLS-1$
 	}
 
 	@Override
