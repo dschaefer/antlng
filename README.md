@@ -1,4 +1,4 @@
-# lang
+# antlng
 Multi-language framework for Eclipse based on Antlr 4
 
 I have had a dream for a long time, since the early days when starting building the C++ parser for CDT.
