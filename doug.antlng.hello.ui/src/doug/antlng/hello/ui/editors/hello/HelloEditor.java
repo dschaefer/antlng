@@ -9,7 +9,6 @@ public class HelloEditor extends TextEditor {
 	public HelloEditor() {
 		super();
 		setSourceViewerConfiguration(new HelloConfiguration(colorManager));
-		setDocumentProvider(new HelloDocumentProvider());
 	}
 
 	@Override

@@ -1,5 +1,6 @@
 package doug.antlng.hello.ui.editors.hello;
 
+import org.eclipse.jface.text.IDocument;
 import org.eclipse.jface.text.presentation.IPresentationReconciler;
 import org.eclipse.jface.text.presentation.PresentationReconciler;
 import org.eclipse.jface.text.rules.DefaultDamagerRepairer;
@@ -19,8 +20,8 @@ public class HelloConfiguration extends SourceViewerConfiguration {
 		PresentationReconciler reconciler = new PresentationReconciler();
 
 		DefaultDamagerRepairer dr = new DefaultDamagerRepairer(new HelloScanner(colorManager));
-		reconciler.setDamager(dr, HelloPartitionScanner.HELLO);
-		reconciler.setRepairer(dr, HelloPartitionScanner.HELLO);
+		reconciler.setDamager(dr, IDocument.DEFAULT_CONTENT_TYPE);
+		reconciler.setRepairer(dr, IDocument.DEFAULT_CONTENT_TYPE);
 
 		return reconciler;
 	}
